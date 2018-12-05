@@ -6,6 +6,8 @@
 #
 # WARNING! All changes made in this file will be lost!
 
+#alekospj 05/12/18
+
 from PyQt5 import QtCore, QtGui, QtWidgets
 from urllib.request import urlopen
 import urllib.request, time;
@@ -59,7 +61,6 @@ class Ui_MainWindow(object):
                 thrd_start.start()
                 thrd_start.join()
             except:
-#                 self.p.terminate()
                 print('Lagare!')
         
         stsh = self.pushButton_start_shield        
@@ -133,10 +134,7 @@ class Ui_MainWindow(object):
                 return subprocess.Popen(path_name)
              
             self.p = open_program(r"C:\Users\xoxlios\Desktop\uTorrent\uTorrent.exe") 
-#             self.textBrowser_consola.append('***   Started!  ***')
-#             self.textBrowser_consola.append('*** Press Start ***')
-            
-#             self.textBrowser_consola.append('Started!')    
+
             ip = socket.gethostbyname(socket.gethostname())
             
             while True:
@@ -148,10 +146,7 @@ class Ui_MainWindow(object):
                     self.textBrowser_consola.append('\nConection Lost!\n')
                     self.p.terminate()
                     break
-                
-
-#                     self.close_app()
-        
+               
         thrd_scrn = Thread(target = actul_rn())
         thrd_scrn.start()
         thrd_scrn.join()

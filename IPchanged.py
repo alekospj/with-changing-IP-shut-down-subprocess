@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\Alexandros.FRANGIADO\OneDrive\vpn_shield\scripts\Nick_Fury.ui'
+#ALEKOSPJ
 #
 # Created by: PyQt5 UI code generator 5.10.1
 #
